@@ -26,8 +26,11 @@ def generate_shared_object test_case, example=nil
   dir = dir_str test_case
 
   Rubex::Compiler.compile(path + '.rubex', directory: dir)
+  require 'pry'
   Dir.chdir(dir) do
+    # binding.pry
     `ruby extconf.rb`
+    puts File.read("#{path}.rubex")
     `make`
   end
 end

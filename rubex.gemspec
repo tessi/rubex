@@ -35,4 +35,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pretty_backtrace'
   spec.add_development_dependency 'ruby-prof'
   spec.add_development_dependency 'benchmark-ips'
+  spec.add_development_dependency 'pry'
 end
