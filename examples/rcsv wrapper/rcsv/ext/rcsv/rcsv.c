@@ -25,7 +25,7 @@ typedef struct rcsv_metadata
 
 
 
-VALUE rb_cObject;
+// VALUE rb_cObject;
 VALUE rb_eStandardError;
 VALUE __rubex_rb_cls_RcsvParseError;
 VALUE __rubex_rb_cls_Rcsv;
