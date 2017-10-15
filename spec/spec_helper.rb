@@ -30,7 +30,7 @@ def generate_shared_object test_case, example=nil
   Dir.chdir(dir) do
     # binding.pry
     `ruby extconf.rb`
-    puts File.read("#{path}.rubex")
+    puts File.read("#{path}.c") if path.include?("basic_ruby_method")
     `make`
   end
 end
